@@ -1,0 +1,1 @@
+/opt/homebrew/bin/gfortran -L/opt/homebrew/opt/lapack/lib  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk CMakeFiles/exec.dir/a.f90.o CMakeFiles/exec.dir/b.f90.o CMakeFiles/exec.dir/c.f90.o CMakeFiles/exec.dir/d.f90.o CMakeFiles/exec.dir/main.f90.o -o exec 
