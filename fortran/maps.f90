@@ -27,9 +27,18 @@ contains
    subroutine 3Dhetero-chaos_bakers_map(x, y, z, a, b)
       real(8), intent(inout) :: x, y, z
       real(8), intent(in) :: a, b
-      
-
    end subroutine 3Dhetero-chaos_bakers_map
+
+   subroutine half_bakers_map(x, y)
+      real(8), intent(inout) :: x, y
+      if (x < 0.5) then
+            x = 2.0 * x
+            y = 0.5 * y + 0.5
+      else
+            x = 1 - y
+            y = x-0.5
+      end if
+   end subroutine half_bakers_map
 
    subroutine logistic_map(x, a_in)
       real(8), intent(inout) :: x
